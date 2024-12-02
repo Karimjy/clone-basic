@@ -1,0 +1,38 @@
+$backLightColor: #f4f4f4;
+$backDarkColor: #252422;
+
+$textWhiteColor: #ffffff;
+$textColorDefault: #000000;
+$textColorPink: rgb(249, 205, 205);
+
+body {
+    font-size: 14px !important;
+    transition: background 0.5s ease;
+}
+
+h1 {
+    font-size: 46px !important;
+}
+
+h2 {
+    font-size: 24px !important;
+}
+
+h3 {
+    font-size: 18px !important;
+}
+
+body.blackPink {
+    *{
+        color: $textColorPink!important;
+        fill: $textColorPink!important;
+        border-color: $textColorPink!important;
+    }
+    background-color: $backDarkColor!important;
+}
+
+@media (min-width: 1024px) {
+    h3 {
+        font-size: 22px !important;
+    }
+}
